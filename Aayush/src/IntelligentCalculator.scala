@@ -28,11 +28,7 @@ object IntelligentCalculator {
   }
 
   def main(args: Array[String]): Unit = {
-    //    operationSelector(5,6,"+")
-    //    operationSelector(5,6,"*")
-    //    operationSelector(5,6,"/")
-    //    operationSelector(5,6,"-")
-    //    operationSelector(5,6,"%")
+
     val input = getInput()
     resultGenerator(input)
   }

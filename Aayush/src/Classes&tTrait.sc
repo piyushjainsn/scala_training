@@ -18,5 +18,17 @@ sumWithTailRecursion(12, 0)
 
 "aayush" drop 3
 
-// Exercise  #3
 def returnString(): String = "return this string"
+
+def Something(): String = "Is it what you want!!!!"
+
+
+// Call by value
+def callByValue(x: Int) = println( "Call Bhy Value Demo : " + x)
+
+callByValue(12)
+
+// Call by name
+def callByName(x: => String) = println("Call By Name Demo : " + x)
+
+callByName(Something)

@@ -20,7 +20,7 @@ second.print
 //
 //  def apply(name: String, productCode: Long): Donut = new Donut(name, productCode)
 //
-//  val first = Donut("Choclate", 2345)
+//  val first = Donut("Chocolate", 2345)
 //  first.print
 //  val second = Donut("Plain", 987)
 //  second.print
