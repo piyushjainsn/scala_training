@@ -1,3 +1,5 @@
+package Assignment
+
 
 
 object Student extends App {

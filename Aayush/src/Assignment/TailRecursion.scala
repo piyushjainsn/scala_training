@@ -1,3 +1,5 @@
+package Assignment
+
 import scala.annotation.tailrec
 
 object TailRecursion extends App  {
