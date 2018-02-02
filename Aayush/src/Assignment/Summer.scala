@@ -1,3 +1,4 @@
+package Assignment
 
 class ChecksumAccumulator {
   private var sum = 0
@@ -23,9 +24,10 @@ object ChecksumAccumulator {
     }
 }
 
-object Summer extends ChecksumAccumulator {
-  def main(args: Array[String]) {
-//    for (arg <- args)
-//      println(arg +": "+ calculate(arg))
+object Summer extends App{
+  override def main(args: Array[String]): Unit = {
+    for (arg <- args)
+      println(arg +": "+ ChecksumAccumulator.calculate(arg))
   }
 }
+
