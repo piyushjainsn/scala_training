@@ -25,9 +25,8 @@ object ChecksumAccumulator {
 }
 
 object Summer extends App{
-  override def main(args: Array[String]): Unit = {
-    for (arg <- args)
-      println(arg +": "+ ChecksumAccumulator.calculate(arg))
-  }
+  val list = List("Alex", "John", "Samuel")
+  for (arg <- list)
+    println(arg +": "+ ChecksumAccumulator.calculate(arg))
 }
 

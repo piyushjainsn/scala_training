@@ -35,4 +35,3 @@ object IntelligentCalculator {
     resultGenerator(input)
   }
 }
-

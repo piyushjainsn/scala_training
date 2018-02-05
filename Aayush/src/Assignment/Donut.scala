@@ -1,3 +1,4 @@
+package Assignment
 
 class Donut(name: String, productCode: Long){
 
@@ -27,4 +28,5 @@ object Donut extends App {
   val third = Donut("Mixed", 321)
   third.print
 }
+
 

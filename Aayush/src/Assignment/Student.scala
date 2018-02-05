@@ -1,7 +1,5 @@
 package Assignment
 
-
-
 object Student extends App {
   private def dispalyDetails(id: Int, name: String): Unit = println(id + "   " + name)
 
