@@ -22,3 +22,4 @@ val finalList = list1 ::: list2
 val listPrepend = 3 :: list2
 list1.drop(2)
 list1.dropRight(2)
+
