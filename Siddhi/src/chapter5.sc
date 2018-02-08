@@ -102,4 +102,4 @@ null == List(1,2,3)            // res10: Boolean = false
 
 4 to 6                          // res17: scala.collection.immutable.Range.Inclusive = Range 4 to 6
 
-"Siddhi" drop 2                 // res18: String = ddhi 
+"Siddhi" drop 2                 // res18: String = ddhi
