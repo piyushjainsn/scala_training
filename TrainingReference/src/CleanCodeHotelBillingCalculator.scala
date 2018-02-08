@@ -5,7 +5,7 @@ object CleanCodeHotelBillingCalculator {
   case class Bill(dishes:List[Dish], totalAmount:Double)
 
   trait Printer{
-    def print(bill:Bill)
+    def print(bill:Bill):String
     val totalAmountLabel = "Total amount:"
     def itemDescriptions(bill:Bill) = {
       bill.dishes.map(item => item.name + " - " + item.price).mkString("\n")
@@ -13,7 +13,7 @@ object CleanCodeHotelBillingCalculator {
   }
 
   object TextPrinter extends Printer{
-    def print(bill:Bill) = {
+    def print(bill:Bill):String = {
       s"""
          |Bill
          |${itemDescriptions(bill)}
@@ -25,7 +25,7 @@ object CleanCodeHotelBillingCalculator {
   }
 
   object HtmlPrinter extends Printer{
-    def print(bill:Bill) = {
+    def print(bill:Bill): String = {
       s"""
          |<title>Bill</title>
          |${itemDescriptions(bill)}
