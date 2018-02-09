@@ -1,0 +1,29 @@
+1 **Tail recursion**
+with array of numbers, create a recursive function to find the largest number
+write the method again which is tail recursive
+dont use for while loop, use head and tail method as mentioned below
+
+2 **pattern matching**
+using recursion and pattern matching print each element of a list
+
+
+3 **binary tree - traits - recursion - pattern matching - case classes**
+Create a Tree class representing a binary tree.
+Create a Node class (nodeId as Int, left child Node, right child Node, value as Int) which represent a node in binary tree.
+Tree class should have a node which is top node in binary tree.
+A node can be present with a value or can be empty node.
+
+Step 1 : create an object of tree and populate the nodes upto 2 level with.
+rootnode -> node1, node2
+node1 -> node11, node12
+node2 ->  none, node22
+
+Step2: tree class has a find method which takes Int value as input parameter and returns back nodeId of the matching node.
+
+Questions:
+What to return if the node is not found in the tree.
+How to do tree traversal?  (recursion or pattern matching or both)
+
+Implement this using traits and its implementation.
+Try this using option class as well.
+

@@ -1,0 +1,8 @@
+1) Write the 4 calculator methods (+ -  / *) as lambda expression and
+   pass them as parameter in a function “calc” to perform calculation on 2 integers.
+
+2) given input as string  “1+2” or “3*4" or “5-6” ,
+   parse the input (assume only single digit numbers as of now),
+   split them in array,
+   call the correct operation and
+   return the output by making use of the functions done in 1.

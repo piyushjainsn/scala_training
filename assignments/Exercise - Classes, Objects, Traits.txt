@@ -1,0 +1,60 @@
+Exercise: 1
+class Student(sid:Int, sname:String){
+val Id = sid
+val name = sname
+  
+override def toString() =
+this.Id+" "+" , "+this.name
+}
+
+1. Create an object with the same name Student with displayDetails method where we want to print the details of the student? 
+
+
+Exercise 2.
+class Donut(name: String, productCode: Long){
+
+  def print = println(s"Donut name = $name, productCode = $productCode")
+
+}
+
+1. declare a companion object for the Donut class
+2. create instances of the Donut class using the companion object
+3. call the print function for each of the donut object
+
+Exercise 3. Return type of this method as string in scala shell
+def returnString() {"return this string"}
+
+Exercise 4. Make this object Summer executable but without using main method?
+
+import scala.collection.mutable.Map
+
+class ChecksumAccumulator {
+private var sum = 0
+def add(b: Byte) { sum += b }
+def checksum(): Int = ~(sum & 0xFF) + 1
+}
+
+object ChecksumAccumulator {
+
+private val cache = Map[String, Int]()
+
+def calculate(s: String): Int =
+if (cache.contains(s))
+cache(s)
+
+else {
+val acc = new ChecksumAccumulator
+for (c <- s)
+acc.add(c.toByte)
+val cs = acc.checksum()
+cache += (s -> cs)
+cs
+}
+}
+
+object Summer {
+def main(args: Array[String]) {
+for (arg <- args)
+println(arg +": "+ calculate(arg))
+}
+}
